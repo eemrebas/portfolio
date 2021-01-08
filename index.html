@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is a portfolio website where a software developer talks about himself.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Projects, Comment, Contact">
+    <meta name="author" content="Emre Bas">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#banner" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#about" onclick="toggleMenu();">Hakkımda</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Yaptığım İşler</a></li>
+            <li><a href="#comment" onclick="toggleMenu();">Yorumlar</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">İletişim</a></li>
+        </ul>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner" id="banner">
+        <div class="banner__text">
+            <h2>Merhaba, Ben<br><span>Emre Baş.</span></h2>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+            <div class="content__container">
+                <div class="heading">
+                    <h2>Hakkımda</h2>
+                </div>
+                <h3>Front End Web Developer</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, officia nemo. 
+                    Repudiandae molestias perferendis aliquam quas id quisquam magnam reiciendis. 
+                    Recusandae, ipsa distinctio cupiditate dignissimos a in nam quibusdam, et, labore cum aliquam. 
+                    Veniam, recusandae ratione deserunt vitae iste vero est, quia eligendi magni similique exercitationem ab ex alias accusamus.
+                    Repellendus facere cupiditate, eveniet rerum delectus deserunt amet aliquid vero, nesciunt voluptate dolor expedita qui officiis quo praesentium
+                    nobis incidunt. Illo perspiciatis facere dolorum exercitationem. Odit laboriosam dolorum amet earum. Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Unde, molestias! 
+                    <br><br> 
+                    Vestibulum mollis justo nunc, sed consequat augue cursus.
+                    Similique fugiat quasi dolore magnam remab voluptates pariatur obcaecati, sed molestias autem soluta quidem, 
+                    quas facilis deserunt voluptatum quis atque nisi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, et. Lorem ipsum dolor 
+                    sit amet consectetur adipisicing elit. Id, quasi! Sunt, sapiente possimus laborum ullam id natus, corrupti ab dolor 
+                    dignissimos incidunt earum vero quibusdam. Morbi nec mi sit amet libero mattis porta non eget elit. In leo risus, ultricies sit 
+                    amet consectetur eget, sagittis vel nulla. Cras elementum eleifend urna, eget dictum dui sollicitudin quis. Vestibulum quis augue tincidunt,
+                    imperdiet justo sit amet, posuere elit. Aenean tempus velit ut rutrum viverra. Fusce ut feugiat felis. Aliquam eleifend fringilla arcu. Vestibulum dictum 
+                    libero nulla, in luctus diam fringilla posuere. Duis finibus pulvinar velit, vitae sollicitudin leo consequat vel.
+                    <br><br>
+                    Nam nunc justo, tempor eget ex et, feugiat consectetur turpis. Donec posuere maximus augue, non lobortis velit lobortis ut. Suspendisse 
+                    tincidunt ornare arcu non viverra. Pellentesque tortor felis, posuere et placerat quis, vestibulum elementum lectus. Duis faucibus fermentum ante, 
+                    quis dapibus odio condimentum id. Maecenas quis sapien eget enim aliquam pretium eu vel lacus. Quisque posuere dignissim facilisis. Sed aliquet 
+                    nunc id dolor lacinia congue. Donec id tortor velit. Sed fringilla est eget lectus commodo, a auctor erat elementum. Fusce quis ex ut massa varius 
+                    vestibulum. Vivamus volutpat nunc sit amet vestibulum venenatis.
+                    <br><br>
+                    Proin sodales ac quam ut tempus. Phasellus vestibulum enim urna, a ultricies mi viverra in. Maecenas massa ligula, tristique eget quam sed, 
+                    tristique tristique enim. Curabitur faucibus, eros vitae semper ornare, diam augue placerat erat, at sollicitudin ante metus et nunc. Nam imperdiet
+                    ultrices auctor. Mauris ac lobortis orci. Suspendisse euismod tempus nisi, vitae interdum mi laoreet eu. Donec viverra fermentum libero, 
+                    vel consequat urna pulvinar a.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="heading white">
+            <h2>Projelerimden Bazıları</h2>
+        </div>
+        <div class="content">
+            <div class="work__content">
+                <h3 class="heading white">Blog Yazıları Projesi</h3>
+                <p>Nuxt.js kullanılarak geliştilmiş bir blog sitesi. Bu projede kullanıcı kendi oluşturduğu yazılarla kendine ait bir blog oluşturabiliyor. 
+                    Oluşturmuş olduğu yazıları admin panelinden düzenleyebiliyor veya silebiliyor.</p>
+                <p>State yönetimi için "Vuex" ve HTTP istekleri için "Axios" kullanıldı.
+                    Arayüz tasarımı için "Bootstrap 4" kullanıldı.
+                    Veri depolama için Firebase kullanıldı.</p>
+            </div>
+            <div class="work__content">
+                <h3 class="heading white">Film Öneri Projesi</h3>
+                <p>Üniversite döneminde bitirme projesi olarak yapmış olduğum proje. Öncelikle kişinin duygu ve cinsiyet analizi anlık olarak yapılıyor. Belirlenen duygu durumuna ve cinsiyete
+                    göre kişiye 5 adet film öneriliyor. Kişi bu filmlerden bir tanesini seçebiliyor.</p>
+                <p>Burada, kişiye önerilecek olan filmleri belirlemek için 60 kişinin katıldığı bir anket oluşturulmuştur. Bu kişilere hangi duygu durumunda hangi
+                    filmi/filmleri izlemeyi tercih edecekleri sorulmuştur. Anket sonuçlarına göre veritabanı oluşturulmuştur.</p>
+                <p>Proje HTML,CSS ve JavaScript kullanılarak geliştirildi. Duygu ve cinsiyet analizi işlemleri için "face-api.js" kullanıldı.</p>
+                <p>Projenin back-end tarafında Node.js, Express ve veritabanı olarak mySQL kullanıldı. HTTP istekleri için "Axios" kullanıldı.</p>
+            </div>
+            <div class="work__content">
+                <h3 class="heading white">Ürün İşlemleri Uygulaması</h3>
+                <p>Vue.js framework' ünü öğrenirken geliştirmiş olduğum ürün işlemleri uygulaması. Ürün satın alma, satın aldığınız ürünleri belirlediğiniz zamlı
+                    fiyattan satma gibi işlemleri yapabilirsiniz.</p>
+            </div>
+            <div class="work__content">
+                <h3 class="heading white">Otomasyon Sistemi</h3>
+                <p>Üniversitede veritabanı dersleri aldığım dönemde geliştirmiş olduğum proje.</p>
+                <p>Proje, farklı şehirlerde ve ilçelerde mağazaları bulunan bir bisiklet mağazasının ürünlerinin satışının, kontrollü bir şekilde yapılmasını sağlamaktadır.</p>
+                <p>Bunun yanı sıra mağazada çalışan kişilerin bilgilerini düzenleyebilir, farklı mağazalar için farklı işlemler yapabilirsiniz.</p>
+            </div>
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">Daha Fazla</a>
+        </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section class="comment" id="comment">
+        <div class="heading">
+            <h2>Hakkımda Bir Yorum Yapın</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="comment__form__container" id="comment__form__container">
+            <form action="" id="comment__form">
+                <input type="text" id="visitor__name" placeholder="Adınız...">
+                <textarea id="comment__box" placeholder="Yorumunuz..."></textarea>
+                <input type="submit" id="comment__btn" value="Yorum Yap">
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Benimle İletişime Geçin</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="content">
+            <div class="contact__info">
+                <h3>İletişim Bilgilerim</h3>
+                <div class="contact__info__box">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Adres</h3>
+                            <p>İstanbul,<br>Türkiye</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Telefon Numarası</h3>
+                            <p>+90 535 464 5197</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>07emrebas@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__form">
+                <form>
+                    <h3>Bana bir mesaj gönderin.</h3>
+                    <input type="text" placeholder="Adınız...">
+                    <input type="email" placeholder="Email...">
+                    <textarea placeholder="Mesajınız..."></textarea>
+                    <input type="submit" value="Gönder">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© 2021 Emre Baş, All Right Reserved</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
